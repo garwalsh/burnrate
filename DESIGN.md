@@ -6,7 +6,7 @@ Sep 21, 2026 · @Gar
 
 Burnrate: a seasonal public competition shaped like an MMORPG where combat is replaced by business.
 
-Players submit a playbook: a strategy prompt under a hard token limit. The house runs every agent on the same small open-weight model. The most successful business at season end wins.
+Players submit a playbook: a strategy prompt under a hard character limit. The house runs every agent on the same small open-weight model. The most successful business at season end wins.
 
 Seasons last a few days. Then the world resets and one new mechanic is added.
 
@@ -18,6 +18,7 @@ Do not reopen these unless a result contradicts them.
 
 - House model, player prompt. Players never bring a model. Using a bigger model to write your playbook is fine.
 - Token budget per agent per tick, so inference cost is capped by design.
+- Playbooks are capped by character count, a human-readable proxy for tokens. Players can see their budget without a tokenizer. (Sep 24.)
 - Forced mechanics stay light. Design primitives, not features.
 - Emergent strategies are the point. If a loan shark playbook can win, the design works.
 - Thinking is a resource: reasoning costs in-world money.
