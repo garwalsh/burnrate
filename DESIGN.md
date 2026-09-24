@@ -6,7 +6,7 @@ Sep 21, 2026 · @Gar
 
 Burnrate: a seasonal public competition shaped like an MMORPG where combat is replaced by business.
 
-Players submit a character sheet: a class, attribute points, and a strategy prompt under a hard token limit. The house runs every agent on the same small open-weight model. The most successful business at season end wins.
+Players submit a playbook: a strategy prompt under a hard token limit. The house runs every agent on the same small open-weight model. The most successful business at season end wins.
 
 Seasons last a few days. Then the world resets and one new mechanic is added.
 
@@ -16,27 +16,28 @@ Seasons last a few days. Then the world resets and one new mechanic is added.
 
 Do not reopen these unless a result contradicts them.
 
-- House model, player prompt. Players never bring a model. Using a bigger model to write your sheet is fine.
+- House model, player prompt. Players never bring a model. Using a bigger model to write your playbook is fine.
 - Token budget per agent per tick, so inference cost is capped by design.
 - Forced mechanics stay light. Design primitives, not features.
-- Emergent strategies are the point. If a loan shark sheet can win, the design works.
+- Emergent strategies are the point. If a loan shark playbook can win, the design works.
 - Thinking is a resource: reasoning costs in-world money.
 - Hidden information and noise so raw intelligence has diminishing returns.
 - Prior art: Screeps (CPU budget, server runs your code, open-source private servers).
 - You have to be alive to win. Dead agents don't rank, whatever they died holding. (Sep 21, from Block 1.)
-- House model is qwen2.5:7b, replacing llama3.2. The floor for any house model is following a strategy sheet, and llama3.2 is below it. (Sep 21, from Block 2.)
-- The player owns the reflection loop. The player reads the run, spots the pattern and rewrites the sheet; the house model executes. Otherwise the game becomes model vs model. Players feeding results to a stronger model to update their sheet is fine, since they still have to take part in the loop. (Sep 22, from Block 3.)
-- Keep the model in the loop. Compiling English sheets into deterministic server-side code is rejected: chance and non-deterministic strategy are part of the game. The challenge: can a player prompt an agent to join an economy and deal with other agents so it ends up the most financially successful, by any means? The world should be loose enough for many strategies (buying wholesale and reselling retail, side deals, boycotts) built from the fewest mechanics. Closer to RuneScape: messaging, currency, goods, trading, few levers, complex economies. (Sep 23.)
+- House model is qwen2.5:7b, replacing llama3.2. The floor for any house model is following a playbook, and llama3.2 is below it. (Sep 21, from Block 2.)
+- The player owns the reflection loop. The player reads the run, spots the pattern and rewrites the playbook; the house model executes. Otherwise the game becomes model vs model. Players feeding results to a stronger model to update their playbook is fine, since they still have to take part in the loop. (Sep 22, from Block 3.)
+- Keep the model in the loop. Compiling English playbooks into deterministic server-side code is rejected: chance and non-deterministic strategy are part of the game. The challenge: can a player prompt an agent to join an economy and deal with other agents so it ends up the most financially successful, by any means? The world should be loose enough for many strategies (buying wholesale and reselling retail, side deals, boycotts) built from the fewest mechanics. Closer to RuneScape: messaging, currency, goods, trading, few levers, complex economies. (Sep 23.)
 
 ## Open decisions
 
 Parked until Gar raises them.
 
+- Classes and attribute points on top of the playbook. Not sold yet. (Sep 24.)
 - Contract enforcement: world / nobody (reputation only) / optional collateral. Leaning nobody or collateral.
 - Is persuading another agent by message to hand over money legal play? Leaning yes with message limits.
 - One forced pressure that makes deals necessary, so the world doesn't stall.
 - Tick rhythm: publish a turn at a fixed interval (every few hours) no matter how fast it computes. Compute offline, publish on a clock, so players have a reason to come back and there's no real-time load. (Sep 23.)
-- Do players act between ticks? Locked sheet means the whole season can be computed in advance, but the tick is theatre. Reacting between ticks is the reason to return, but rewards whoever is online at 3am. Leaning: sheet locked for the season plus a small budget of directives (around 3), each a short instruction delivered on the next tick, so the decision is when to spend them. (Sep 23.)
+- Do players act between ticks? Locked playbook means the whole season can be computed in advance, but the tick is theatre. Reacting between ticks is the reason to return, but rewards whoever is online at 3am. Leaning: playbook locked for the season plus a small budget of directives (around 3), each a short instruction delivered on the next tick, so the decision is when to spend them. (Sep 23.)
 - Who pays for inference at scale. Levers: cap agents per player, offline batching, free tier of one agent, players supplying their own key pinned to the house model. (Sep 23.)
 - Season scoring metric. Cash alone rewards hoarding, which drove a lot of Block 2's behavior. (Sep 23.)
 - How players reach the game. Wants: players play free on compute they already pay for (Claude or ChatGPT subscriptions), with model capability limited. Gar is fine paying to host the world. No entry fee, and no free season paid for by Gar as the answer to inference cost. One option: an MCP server. (Sep 22.)
@@ -56,13 +57,13 @@ Parked until Gar raises them.
 - Reset every few days
 - One new mechanic per reset
 - Patch notes
-- Nerf the dominant sheet
+- Nerf the dominant playbook
 - Hidden per-season parameters
-- Class balance so no sheet beats every matchup
+- Balance so no playbook beats every matchup
 
 ## Risks
 
-- Meta collapse: one sheet copied by all
+- Meta collapse: one playbook copied by all
 - Prompt injection through agent messages
 - Inference cost at public scale
 - A world where nothing happens
@@ -76,28 +77,28 @@ Each block ends with something to look at and a question it answers.
 | 1 | Ledger-only economy, 5 agents, local model | Does the model respond to scarcity or roleplay? |
 | 2 | Add a market | Does a price form and move under shocks? |
 | 3 | DONE (Sep 23). Journal farmer: a principle sheet plus a journal across 5 games, plan before each game, lessons after. Replaced the old Block 3 (persistence and memory) and pulled sheets forward from Block 4. | Does an agent invent a strategy and explain it, and does its own history change it? |
-| 4 | NEXT. A thicker world: 3 or 4 goods, agents better at making different ones, at least one good needing an input. Named bilateral trade and private messages replace the anonymous auction. | Does the world support more than one viable strategy? Run 3 different sheets, n = 3 each. |
+| 4 | NEXT. A thicker world: 3 or 4 goods, agents better at making different ones, at least one good needing an input. Named bilateral trade and private messages replace the anonymous auction. | Does the world support more than one viable strategy? Run 3 different playbooks, n = 3 each. |
 | 5 | Deals with no enforcement: offers, acceptance, promises that can be broken, and a post-season reveal of all private messages. | Can the house model negotiate, honour a deal, and break one? Untested, and load-bearing for the whole design. |
-| 6 | The player loop: run report, replay viewer, ticks published on a clock, sheet submission, directive budget. Closed alpha with 5 friends. | Can a player spot a planted pattern from the report alone, and beat the house sheets? What do they exploit? |
+| 6 | The player loop: run report, replay viewer, ticks published on a clock, playbook submission, directive budget. Closed alpha with 5 friends. | Can a player spot a planted pattern from the report alone, and beat the house playbooks? What do they exploit? |
 | 7 | Web app and first public season: accounts, submission, tick scheduler, leaderboard, replays. | Can strangers play without Gar in the loop, and does anyone care? |
 
 ## Picking this up (as of Sep 23, 2026)
 
-**Where it stands.** Blocks 1 to 3 are done, all three with negative or narrow results. The through-line: the house model executes a sheet faithfully and cannot author strategy or learn from its own history. So the player owns the thinking loop (watch a run, spot what the world is doing, rewrite the sheet) and the agent owns execution. The sim as built is one good, one anonymous auction, identical information for everyone, which leaves pricing as the only strategy. Block 4 is about giving the world enough surface for strategies to differ.
+**Where it stands.** Blocks 1 to 3 are done, all three with negative or narrow results. The through-line: the house model executes a playbook faithfully and cannot author strategy or learn from its own history. So the player owns the thinking loop (watch a run, spot what the world is doing, rewrite the playbook) and the agent owns execution. The sim as built is one good, one anonymous auction, identical information for everyone, which leaves pricing as the only strategy. Block 4 is about giving the world enough surface for strategies to differ.
 
 **Code**, in Gar's `burnrate` folder, Python 3.9, Ollama running qwen2.5:7b locally:
 
-- `block2_market.py` is the world. 5 agents (2 farmers, 3 workers), think cost, eat-or-starve, spoilage above 6 food, a call auction that clears once a turn, a hidden drought at T15 to T22, and per-agent strategy sheets. Rules and sheets are constants at the top. Writes a per-turn CSV and a price CSV.
+- `block2_market.py` is the world. 5 agents (2 farmers, 3 workers), think cost, eat-or-starve, spoilage above 6 food, a call auction that clears once a turn, a hidden drought at T15 to T22, and per-agent strategy sheets (the code's name for playbooks). Rules and sheets are constants at the top. Writes a per-turn CSV and a price CSV.
 - `block2_batch.py` runs it N times per arm (drought vs control) and prints one comparison table.
 - `block3_journal.py` runs 5 games with one agent on a principle sheet plus a journal that survives between games, writing `block3_journal.md`.
 
 **How we work.** One variable per run. n = 3 per setting minimum, because single-run comparisons produced two false findings in Block 2. Every run gets logged in the Burnrate dev log with what changed, what ran, what was seen, what it means, and what's next. Before believing an agent-behaviour finding, check the harness first: three early "findings" were our own bugs (a price in the prompt example anchored all trades, an answer-first reply format forced the agent's first word, and agents saw trades but never the order book).
 
-**Open threads not yet in a block:** what a sheet can express before fidelity breaks (does qwen honour a conditional?), the scoring metric, and the tick rhythm plus directive budget in Open decisions.
+**Open threads not yet in a block:** what a playbook can express before fidelity breaks (does qwen honour a conditional?), the scoring metric, and the tick rhythm plus directive budget in Open decisions.
 
-**Model ladder (agreed Sep 23).** Testing the world on a small model confounds two questions: is the world thin, or is the model too weak to see what's in it? So from Block 4 on, the world is tested on the strongest model Gar's Mac can run (M1 Max, 64GB) first. If it finds several distinct ways to win, the world is rich enough. Then its winning strategies get written up as player sheets and handed to smaller and smaller models. The smallest one that still follows them faithfully becomes the house model, since the production model needs to be obedient, not clever (the player does the thinking). Ladder: qwen3.6:27b (top), a qwen3 14B (middle), qwen2.5:7b (current house model). All local and free; pay for an API run set only when a local result is ambiguous. Expect about an hour per game on the top rung, so test sets run overnight.
+**Model ladder (agreed Sep 23).** Testing the world on a small model confounds two questions: is the world thin, or is the model too weak to see what's in it? So from Block 4 on, the world is tested on the strongest model Gar's Mac can run (M1 Max, 64GB) first. If it finds several distinct ways to win, the world is rich enough. Then its winning strategies get written up as playbooks and handed to smaller and smaller models. The smallest one that still follows them faithfully becomes the house model, since the production model needs to be obedient, not clever (the player does the thinking). Ladder: qwen3.6:27b (top), a qwen3 14B (middle), qwen2.5:7b (current house model). All local and free; pay for an API run set only when a local result is ambiguous. Expect about an hour per game on the top rung, so test sets run overnight.
 
-**Next step.** Gar pulls `qwen3.6:27b` (about 17GB) and checks it replies. Then: switch the model in `block2_market.py`, turn off Qwen3's built-in thinking mode so it doesn't slow the run or break the reply parser, and start Block 4 step 1. Block 4 is built in steps, one run set each: (1) named offers replace the auction, one good; (2) private messages; (3) extra goods and an input chain; (4) the 3-sheet test that closes the block. Possibly the first job done in Claude Code.
+**Next step.** Gar pulls `qwen3.6:27b` (about 17GB) and checks it replies. Then: switch the model in `block2_market.py`, turn off Qwen3's built-in thinking mode so it doesn't slow the run or break the reply parser, and start Block 4 step 1. Block 4 is built in steps, one run set each: (1) named offers replace the auction, one good; (2) private messages; (3) extra goods and an input chain; (4) the 3-playbook test that closes the block. Possibly the first job done in Claude Code.
 
 ## Block log
 
