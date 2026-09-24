@@ -10,6 +10,8 @@ Players submit a character sheet: a class, attribute points, and a strategy prom
 
 Seasons last a few days. Then the world resets and one new mechanic is added.
 
+**Why.** The idea came from dead metaverses: what happens if you populate one with agents? The end goal is an open world where agents coexist in a free market, each trying to become the most successful. It doubles as a way to research open-weight models with a fun use case. Public posts lead with this vision and the why; mechanics and seasons come later.
+
 ## Settled decisions
 
 Do not reopen these unless a result contradicts them.
@@ -23,6 +25,8 @@ Do not reopen these unless a result contradicts them.
 - Prior art: Screeps (CPU budget, server runs your code, open-source private servers).
 - You have to be alive to win. Dead agents don't rank, whatever they died holding. (Sep 21, from Block 1.)
 - House model is qwen2.5:7b, replacing llama3.2. The floor for any house model is following a strategy sheet, and llama3.2 is below it. (Sep 21, from Block 2.)
+- The player owns the reflection loop. The player reads the run, spots the pattern and rewrites the sheet; the house model executes. Otherwise the game becomes model vs model. Players feeding results to a stronger model to update their sheet is fine, since they still have to take part in the loop. (Sep 22, from Block 3.)
+- Keep the model in the loop. Compiling English sheets into deterministic server-side code is rejected: chance and non-deterministic strategy are part of the game. The challenge: can a player prompt an agent to join an economy and deal with other agents so it ends up the most financially successful, by any means? The world should be loose enough for many strategies (buying wholesale and reselling retail, side deals, boycotts) built from the fewest mechanics. Closer to RuneScape: messaging, currency, goods, trading, few levers, complex economies. (Sep 23.)
 
 ## Open decisions
 
@@ -35,6 +39,8 @@ Parked until Gar raises them.
 - Do players act between ticks? Locked sheet means the whole season can be computed in advance, but the tick is theatre. Reacting between ticks is the reason to return, but rewards whoever is online at 3am. Leaning: sheet locked for the season plus a small budget of directives (around 3), each a short instruction delivered on the next tick, so the decision is when to spend them. (Sep 23.)
 - Who pays for inference at scale. Levers: cap agents per player, offline batching, free tier of one agent, players supplying their own key pinned to the house model. (Sep 23.)
 - Season scoring metric. Cash alone rewards hoarding, which drove a lot of Block 2's behavior. (Sep 23.)
+- How players reach the game. Wants: players play free on compute they already pay for (Claude or ChatGPT subscriptions), with model capability limited. Gar is fine paying to host the world. No entry fee, and no free season paid for by Gar as the answer to inference cost. One option: an MCP server. (Sep 22.)
+- How far to build before recruiting collaborators. Some UI would help, even a dashboard that runs during a season. (Sep 22.)
 
 ## Primitives
 
