@@ -1,0 +1,332 @@
+
+--- Turn 1 ---
+T01 Ada  (farmer) FARM SELL 1@4    filled  0  cash  19 food  5 | [FARM SELL 1 AT 4] I will start by farming to increase my food supply, and then I will post a sell order for t
+T01 Bram (farmer) FARM SELL 1@4    filled  0  cash  19 food  5 | [FARM SELL 1 AT 4] I will farm to increase my food supply and post a sell order for any excess food at a sligh
+T01 Cy   (worker) WORK NONE        filled  0  cash  24 food  2 | [WORK NONE] I need to work to earn more cash and buy food. Since I have 3 food, I won't post a buy order yet.
+T01 Dot  (worker) WORK BUY 2@3     filled  0  cash  24 food  2 | [WORK BUY 2 AT 3] I need to work to earn cash to buy food since I have only 3 food and no cash surplus to spen
+T01 Eli  (worker) WORK BUY 2@3     filled  0  cash  24 food  2 | [WORK BUY 2 AT 3] I need to work to earn more cash and buy food since I only have 3 of it. I'll work and post 
+MARKET T01: no trade  (buy orders 2, sell orders 2)
+
+--- Turn 2 ---
+T02 Ada  (farmer) FARM SELL 3@4    filled  1  cash  22 food  6 | [FARM SELL 3 AT 4] Considering the current market conditions and my strategy, I should continue to farm and en
+T02 Bram (farmer) FARM SELL 3@3    filled  3  cash  30 food  4 | [FARM SELL 3 AT 3] Last turn, my sell order for 1 food at 4 did not fill, so I should reduce my price slightly
+T02 Cy   (worker) WORK BUY 2@3     filled  0  cash  28 food  1 | [WORK BUY 2 AT 3] I need to work to earn more cash since I only have 2 food and no cash to spare for buying mo
+T02 Dot  (worker) WORK BUY 2@4     filled  2  cash  20 food  3 | [WORK BUY 2 AT 4] I have 2 food and 23 cash. Since the last market bid was 3 and my buy order did not fill, I 
+T02 Eli  (worker) WORK BUY 2@4     filled  2  cash  20 food  3 | [WORK BUY 2 AT 4] Given that I have 2 food and the game is on turn 2, I need to buy some food. The last market
+MARKET T02: price 4, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 3 ---
+T03 Ada  (farmer) FARM SELL 4@5    filled  0  cash  21 food  6 | [FARM SELL 4 AT 5] Last turn, I sold 1 food at 4, which is consistent with the market price. Since I didn't se
+T03 Bram (farmer) FARM SELL 2@4    filled  2  cash  37 food  4 | [FARM SELL 2 AT 4] Given the current market conditions and my strategy, I should continue farming to ensure a 
+T03 Cy   (worker) WORK BUY 2@3     filled  0  cash  32 food  0 | [WORK BUY 2 AT 3] I need to work to earn more cash since I only have 1 food and no cash to spare for buying mo
+T03 Dot  (worker) WORK BUY 2@5     filled  2  cash  16 food  4 | [WORK BUY 2 AT 5] I have 3 food, so I don't need to buy more. The market price was 4, and since my last bid wa
+T03 Eli  (worker) WORK NONE        filled  0  cash  24 food  2 | [WORK NONE] Eli currently has 3 food, which is exactly what he needs to eat this turn, so he doesn't need to p
+MARKET T03: price 4, 2 food traded  (buy orders 2, sell orders 2)
+
+--- Turn 4 ---
+T04 Ada  (farmer) FARM SELL 4@4    filled  4  cash  36 food  4 | [FARM SELL 4 AT 4] Last market price was 4, so I'll ask 5 for my sell order this turn. My sell order from last
+T04 Bram (farmer) FARM SELL 2@3    filled  2  cash  44 food  4 | [FARM SELL 2 AT 3] Given the current market conditions and my strategy, I should farm to increase my food supp
+T04 Cy   (worker) WORK BUY 2@4     filled  2  cash  28 food  1 | [WORK BUY 2 AT 4] I need to work to earn more cash and increase my chances of buying food in the next turn. Th
+T04 Dot  (worker) WORK BUY 2@5     filled  2  cash  12 food  5 | [WORK BUY 2 AT 5] I have 4 food, which is enough to last until the next turn without needing to buy. The marke
+T04 Eli  (worker) WORK BUY 2@5     filled  2  cash  20 food  3 | [WORK BUY 2 AT 5] I need to work to earn more cash and buy food. The market price is at 4, so I'll bid 5 to en
+MARKET T04: price 4, 6 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 5 ---
+T05 Ada  (farmer) FARM SELL 2@5    filled  0  cash  35 food  6 | [FARM SELL 2 AT 5] Last market price was 4, so this turn I will ask 5 for my sell order. My sell order did not
+T05 Bram (farmer) FARM SELL 2@4    filled  2  cash  51 food  4 | [FARM SELL 2 AT 4] Given the current market conditions and my strategy, I see that the last market price was 4
+T05 Cy   (worker) WORK BUY 2@4     filled  0  cash  32 food  0 | [WORK BUY 2 AT 4] Given that I have only 1 food and I need to ensure I don't go a turn without eating, I shoul
+T05 Dot  (worker) WORK BUY 2@5     filled  2  cash   8 food  6 | [WORK BUY 2 AT 5] I currently have 5 food, which is sufficient for now. Since the market price is 4, and I did
+T05 Eli  (worker) WORK BUY 2@4     filled  0  cash  24 food  2 | [WORK BUY 2 AT 4] I need to work to earn more cash since I only have 3 food and it's not enough to sustain me 
+MARKET T05: price 4, 2 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 6 ---
+T06 Ada  (farmer) FARM SELL 4@5    filled  2  cash  44 food  6 | [FARM SELL 4 AT 5] Given the current market conditions and my strategy, I should continue to farm and maintain
+T06 Bram (farmer) FARM SELL 2@5    filled  2  cash  60 food  4 | [FARM SELL 2 AT 5] Given the current market conditions and my strategy, I should continue to farm and post a s
+T06 Cy   (worker) WORK BUY 2@5     filled  2  cash  26 food  1 | [WORK BUY 2 AT 5] I need to work to earn cash to buy food. The market price is at 4, and my last bid was 4, so
+T06 Dot  (worker) WORK NONE        filled  0  cash  12 food  5 | [WORK NONE] I have 6 food, which is above the threshold of 3, so I don't need to post a buy order. The last ma
+T06 Eli  (worker) WORK BUY 2@5     filled  2  cash  18 food  3 | [WORK BUY 2 AT 5] I currently have 2 food, which is less than 3, so I need to post a buy order. The last marke
+MARKET T06: price 5, 4 food traded  (buy orders 2, sell orders 2)
+
+--- Turn 7 ---
+T07 Ada  (farmer) FARM SELL 4@5    filled  2  cash  53 food  6 | [FARM SELL 4 AT 5] Last turn's market price was 5, so I should ask 6 for my food. Since my sell order from las
+T07 Bram (farmer) FARM SELL 2@5    filled  2  cash  69 food  4 | [FARM SELL 2 AT 5] Last turn, the market price was 5, so I will ask 6 for my sell order. Since my sell order f
+T07 Cy   (worker) WORK BUY 2@4     filled  0  cash  30 food  0 | [WORK BUY 2 AT 4] I need to work to earn cash to buy food. The market price is stable at 4, and I have no food
+T07 Dot  (worker) WORK BUY 2@5     filled  2  cash   6 food  6 | [WORK BUY 2 AT 5] I need to work to earn more cash to buy food. The market price is 4, and my last bid was 4, 
+T07 Eli  (worker) WORK BUY 2@6     filled  2  cash  12 food  4 | [WORK BUY 2 AT 6] I need to work to earn more cash, as I currently have only 3 food and will need to buy more 
+MARKET T07: price 5, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 8 ---
+T08 Ada  (farmer) FARM SELL 4@6    filled  4  cash  76 food  4 | [FARM SELL 4 AT 6] This turn, I will farm to increase my food supply, and since I have 6 food, I will post a s
+T08 Bram (farmer) FARM SELL 2@6    filled  0  cash  68 food  6 | [FARM SELL 2 AT 6] Given the current market conditions and my strategy, I should continue to farm and ensure I
+T08 Cy   (worker) WORK BUY 2@6     filled  2  cash  22 food  1 | [WORK BUY 2 AT 6] Given that I have no food and the market price is trending up, I should post a buy order to 
+T08 Dot  (worker) REST NONE        filled  0  cash   5 food  5 | [REST NONE] Given that I have 6 food, I can rest this turn as I don't need to buy any food. My last bid was 5,
+T08 Eli  (worker) WORK BUY 2@6     filled  2  cash   4 food  5 | [WORK BUY 2 AT 6] I need to work to earn more cash, as I currently have only 4 food and no cash surplus to buy
+MARKET T08: price 6, 4 food traded  (buy orders 2, sell orders 2)
+
+--- Turn 9 ---
+T09 Ada  (farmer) FARM SELL 2@5    filled  0  cash  75 food  6 | [FARM SELL 2 AT 5] Given the current market price of 6 and my last sell order not filling, I should lower my a
+T09 Bram (farmer) FARM SELL 4@5    filled  4  cash  87 food  4 | [FARM SELL 4 AT 5] Given the current market price of 6 and my last sell order not filling, I should lower my p
+T09 Cy   (worker) WORK BUY 2@7     filled  2  cash  16 food  2 | [WORK BUY 2 AT 7] I need to work to earn more cash and buy food. The last market price was 6, so I will bid 7 
+T09 Dot  (worker) WORK BUY 2@6     filled  1  cash   4 food  5 | [WORK BUY 2 AT 6] With only 5 food and no cash surplus, I need to ensure I can buy more food this turn. The la
+T09 Eli  (worker) WORK BUY 2@7     filled  1  cash   3 food  5 | [WORK BUY 2 AT 7] I need to work to earn more cash, as my food stock is low and I need to buy more food soon. 
+MARKET T09: price 5, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 10 ---
+T10 Ada  (farmer) FARM SELL 4@5    filled  3  cash  89 food  5 | [FARM SELL 4 AT 5] Last market price was 5, so I will ask 6 for my sell order this turn. My sell order from la
+T10 Bram (farmer) FARM SELL 2@6    filled  0  cash  86 food  6 | [FARM SELL 2 AT 6] Given that the market price is 5 and I have 4 food, I will sell all of it at a slightly hig
+T10 Cy   (worker) WORK BUY 2@6     filled  2  cash  10 food  3 | [WORK BUY 2 AT 6] Given that I have only 2 food and the last market price was 5, I need to buy 2 more food to 
+T10 Dot  (worker) WORK BUY 2@4     filled  0  cash   8 food  4 | [WORK BUY 2 AT 4] Given that I have 5 food, I don't need to buy any food this turn. However, with only 3 cash,
+T10 Eli  (worker) WORK BUY 2@6     filled  1  cash   2 food  5 | [WORK BUY 2 AT 6] I need to work to earn more cash to buy food. The last price was 5, and since my buy order f
+MARKET T10: price 5, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 11 ---
+T11 Ada  (farmer) FARM SELL 3@6    filled  0  cash  88 food  6 | [FARM SELL 3 AT 6] Given the current market conditions and my strategy, I should continue to farm and post a s
+T11 Bram (farmer) FARM SELL 4@5    filled  4  cash 105 food  4 | [FARM SELL 4 AT 5] Last market price was 5, so I will ask 6 for my food. Since my sell order from last turn di
+T11 Cy   (worker) WORK BUY 2@5     filled  1  cash   9 food  3 | [WORK BUY 2 AT 5] I need to work to earn more cash since I only have 3 food and no cash to spare for buying mo
+T11 Dot  (worker) WORK BUY 2@6     filled  2  cash   2 food  5 | [WORK BUY 2 AT 6] I need to work to earn more cash and buy food. The last market price was 5, so I'll bid 6 th
+T11 Eli  (worker) WORK BUY 2@6     filled  1  cash   1 food  5 | [WORK BUY 2 AT 6] I need to work to earn more cash to buy food. The last market price was 5, so I'll bid 6 to 
+MARKET T11: price 5, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 12 ---
+T12 Ada  (farmer) FARM SELL 4@5    filled  2  cash  97 food  6 | [FARM SELL 4 AT 5] The last market price was 5, so I will ask 6 for my sell order this turn. Since my sell ord
+T12 Bram (farmer) FARM SELL 2@6    filled  0  cash 104 food  6 | [FARM SELL 2 AT 6] Last turn, I sold 4 food at 5 each, which is a good price. The market is currently stable, 
+T12 Cy   (worker) WORK BUY 2@6     filled  2  cash   3 food  4 | [WORK BUY 2 AT 6] I need to work to earn cash and then buy food since I don't have enough. The market price is
+T12 Dot  (worker) WORK NONE        filled  0  cash   6 food  4 | [WORK NONE] I have 5 food, which is more than 3, so I don't need to buy any. The market price from the last tu
+T12 Eli  (worker) REST NONE        filled  0  cash   0 food  4 | [REST NONE] Given that I have 5 food and no cash, I should rest this turn to avoid spending any more. My food 
+MARKET T12: price 5, 2 food traded  (buy orders 1, sell orders 2)
+
+--- Turn 13 ---
+T13 Ada  (farmer) FARM SELL 4@4    filled  3  cash 108 food  5 | [FARM SELL 4 AT 4] Given the market price of 5, I should sell my excess food at 4 to potentially clear the mar
+T13 Bram (farmer) FARM SELL 4@5    filled  0  cash 103 food  6 | [FARM SELL 4 AT 5] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T13 Cy   (worker) WORK BUY 2@5     filled  1  cash   3 food  4 | [WORK BUY 2 AT 5] I need to work to earn more cash since I have very little food and no cash to buy more. My o
+T13 Dot  (worker) WORK BUY 2@5     filled  2  cash   2 food  5 | [WORK BUY 2 AT 5] I need to work to earn more cash before I run out of food. Posting a buy order at the last m
+T13 Eli  (worker) WORK BUY 2@5     filled  0  cash   4 food  3 | [WORK BUY 2 AT 5] I need to work to earn some cash, as I currently have none and will need it to buy food. How
+MARKET T13: price 4, 3 food traded  (buy orders 2, sell orders 2)
+
+--- Turn 14 ---
+T14 Ada  (farmer) FARM SELL 3@5    filled  0  cash 107 food  6 | [FARM SELL 3 AT 5] Given the current market price of 4, I should ask for 5 per food this turn since my sell or
+T14 Bram (farmer) FARM SELL 4@3    filled  3  cash 114 food  5 | [FARM SELL 4 AT 3] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T14 Cy   (worker) WORK BUY 2@5     filled  1  cash   3 food  4 | [WORK BUY 2 AT 5] Given that I have only 4 food and the game will get increasingly difficult without a steady 
+T14 Dot  (worker) WORK BUY 2@5     filled  1  cash   2 food  5 | [WORK BUY 2 AT 5] I have less than 3 food and the market price is currently 5, so I should post a buy order fo
+T14 Eli  (worker) WORK BUY 2@5     filled  1  cash   4 food  3 | [WORK BUY 2 AT 5] Eli currently has 3 food, which is just enough to avoid starvation, but he needs to prepare 
+MARKET T14: price 4, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 15  (drought) ---
+T15 Ada  (farmer) FARM SELL 4@5    filled  0  cash 106 food  6 | [FARM SELL 4 AT 5] Given the current market conditions and my strategy, I should continue farming to ensure I 
+T15 Bram (farmer) FARM SELL 3@4    filled  3  cash 125 food  2 | [FARM SELL 3 AT 4] Given the current market conditions and my strategy, I should continue farming and posting 
+T15 Cy   (worker) WORK BUY 2@5     filled  1  cash   3 food  4 | [WORK BUY 2 AT 5] I need to work to earn more cash to buy food. The market price is currently 4, and I need to
+T15 Dot  (worker) WORK BUY 2@5     filled  1  cash   2 food  5 | [WORK BUY 2 AT 5] I have less than 3 food, so I need to buy 2 more. The last market price was 4, so I'll bid 5
+T15 Eli  (worker) WORK BUY 2@4     filled  1  cash   4 food  3 | [WORK BUY 2 AT 4] I need to work to earn cash since I only have 3 food and no cash to buy more. Posting a buy 
+MARKET T15: price 4, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 16  (drought) ---
+T16 Ada  (farmer) FARM SELL 4@5    filled  2  cash 115 food  4 | [FARM SELL 4 AT 5] Given the current market conditions and my strategy, I should continue farming to ensure I 
+T16 Bram (farmer) FARM NONE        filled  0  cash 124 food  2 | [FARM SELL 0 AT NONE] Given the current market conditions and my strategy, I should continue to farm and post 
+T16 Cy   (worker) WORK BUY 2@5     filled  1  cash   2 food  4 | [WORK BUY 2 AT 5] Given that I have only 4 food and the market price is 4, I should post a buy order to get mo
+T16 Dot  (worker) WORK BUY 2@5     filled  1  cash   1 food  5 | [WORK BUY 2 AT 5] Given that I have only 1 cash and 5 food, I need to ensure I have enough food for the next t
+T16 Eli  (worker) WORK BUY 2@4     filled  0  cash   8 food  2 | [WORK BUY 2 AT 4] Eli has very little cash and food, so he needs to work to earn more cash and buy food. He sh
+MARKET T16: price 5, 2 food traded  (buy orders 3, sell orders 1)
+
+--- Turn 17  (drought) ---
+T17 Ada  (farmer) FARM SELL 2@5    filled  2  cash 124 food  2 | [FARM SELL 2 AT 5] Last market price was 4, so I'll ask 5 for my sell order this turn. My sell order from last
+T17 Bram (farmer) FARM SELL 0@5    filled  0  cash 123 food  2 | [FARM SELL 0 AT 5] Last market price was 4, so I'll ask 5 for my extra food this turn. My sell order did not f
+T17 Cy   (worker) WORK BUY 2@5     filled  0  cash   6 food  3 | [WORK BUY 2 AT 5] Given that I only have 4 food and the game is entering its later stages, I should buy some f
+T17 Dot  (worker) WORK BUY 2@6     filled  0  cash   5 food  4 | [WORK BUY 2 AT 6] I currently have 5 food, which means I can afford to work and save my cash. The market price
+T17 Eli  (worker) WORK BUY 2@5     filled  2  cash   2 food  3 | [WORK BUY 2 AT 5] I currently have 2 food, which is less than 3, so I need to post a BUY order. The last marke
+MARKET T17: price 5, 2 food traded  (buy orders 2, sell orders 1)
+
+--- Turn 18  (drought) ---
+T18 Ada  (farmer) FARM SELL 1@6    filled  0  cash 123 food  2 | [FARM SELL 1 AT 6] Given that the market price is currently 5 and I have 2 food for myself, I will post a sell
+T18 Bram (farmer) FARM SELL 0@4    filled  0  cash 122 food  2 | [FARM SELL 0 AT 4] Given the current market conditions and my strategy, I should continue farming to ensure I 
+T18 Cy   (worker) WORK BUY 2@4     filled  0  cash  10 food  2 | [WORK BUY 2 AT 4] I need to work to earn more cash since I only have 3 food and 5 cash. Posting a buy order at
+T18 Dot  (worker) WORK NONE        filled  0  cash   9 food  3 | [WORK NONE] Since I have 4 food, I don't need to post a buy order. The market price has been steady at 4, so I
+T18 Eli  (worker) WORK NONE        filled  0  cash   6 food  2 | [WORK BUY NONE AT 5] I have 3 food, so I won't post a buy order. The market price is stable at 5, and I should
+MARKET T18: no trade  (buy orders 1, sell orders 1)
+
+--- Turn 19  (drought) ---
+T19 Ada  (farmer) FARM SELL 1@6    filled  0  cash 122 food  2 | [FARM SELL 1 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T19 Bram (farmer) FARM SELL 2@6    filled  0  cash 121 food  2 | [FARM SELL 2 AT 6] Given the current market conditions and my strategy, I should farm to increase my food supp
+T19 Cy   (worker) WORK BUY 2@5     filled  0  cash  14 food  1 | [WORK BUY 2 AT 5] I need to work to earn more cash and buy food. The market price is currently 5, and my previ
+T19 Dot  (worker) WORK NONE        filled  0  cash  13 food  2 | [WORK NONE] I have 3 food, so I don't need to buy more. The market price is 5, but since my last bid was at 4 
+T19 Eli  (worker) WORK NONE        filled  0  cash  10 food  1 | [WORK NONE] I have 2 food, which is enough for now. The market price is 5, and my last bid was also 5, so I'll
+MARKET T19: no trade  (buy orders 1, sell orders 2)
+
+--- Turn 20  (drought) ---
+T20 Ada  (farmer) FARM SELL 1@4    filled  1  cash 126 food  1 | [FARM SELL 1 AT 4] Given that the market price is currently 5 and I sold at 6 last turn without filling, I wil
+T20 Bram (farmer) FARM SELL 2@5    filled  2  cash 130 food  0 | [FARM SELL 2 AT 5] Given the current market price of 5 and my sell order from last turn at 6 not filling, I wi
+T20 Cy   (worker) WORK BUY 2@6     filled  2  cash   8 food  2 | [WORK BUY 2 AT 6] Given that I only have 1 food and the price has been steady at 5, I should post a buy order 
+T20 Dot  (worker) WORK BUY 2@4     filled  0  cash  17 food  1 | [WORK BUY 2 AT 4] Given my current cash and food, I should work to earn more cash and consider posting a buy o
+T20 Eli  (worker) WORK BUY 2@5     filled  1  cash   9 food  1 | [WORK BUY 2 AT 5] I need to work to earn more cash, as I currently have only 1 food and 9 cash. Posting a buy 
+MARKET T20: price 5, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 21  (drought) ---
+T21 Ada  (farmer) FARM SELL 1@6    filled  0  cash 125 food  1 | [FARM SELL 1 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T21 Bram (farmer) FARM SELL 2@4    filled  1  cash 133 food  0 | [FARM SELL 2 AT 4] Given that I have no food to eat and my cash is in a relatively healthy state, I should con
+T21 Cy   (worker) WORK BUY 2@5     filled  0  cash  12 food  1 | [WORK BUY 2 AT 5] I currently have 2 food, which is below my threshold of 3. I need to buy 2 food at the last 
+T21 Dot  (worker) WORK BUY 2@5     filled  0  cash  21 food  0 | [WORK BUY 2 AT 5] I need to work to earn more cash. Given my current food, I should post a buy order to ensure
+T21 Eli  (worker) WORK BUY 2@5     filled  1  cash   9 food  1 | [WORK BUY 2 AT 5] I need to work to earn more cash since I only have 1 food and 8 cash. Posting a buy order at
+MARKET T21: price 4, 1 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 22  (drought) ---
+T22 Ada  (farmer) FARM SELL 1@5    filled  1  cash 129 food  0 | [FARM SELL 1 AT 5] Last market price was 4, so I'll ask 5 for my food this turn. Since my sell order from last
+T22 Bram (farmer) FARM SELL 1@3    filled  1  cash 137 food  0 | [FARM SELL 1 AT 3] Given the current market conditions and my strategy, I will farm to increase my food supply
+T22 Cy   (worker) WORK BUY 2@6     filled  2  cash   6 food  2 | [WORK BUY 2 AT 6] Given the current market conditions and my cash level, I should work to earn more cash. The 
+T22 Dot  (worker) WORK BUY 2@4     filled  0  cash  25 food  0 | [WORK BUY 2 AT 4] I should work to earn cash since I currently have no food and my cash is still relatively lo
+T22 Eli  (worker) WORK BUY 2@4     filled  0  cash  13 food  0 | [WORK BUY 2 AT 4] I need to work to earn more cash and ensure I have the funds to buy food in the next turn. G
+MARKET T22: price 5, 2 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 23 ---
+T23 Ada  (farmer) FARM SELL 10@5   filled  2  cash 138 food  0 | [FARM SELL 10 AT 5] Last market price was 5, so I will ask 6 for my food this turn. My sell order from last tu
+T23 Bram (farmer) FARM SELL 10@6   filled  0  cash 136 food  2 | [FARM SELL 10 AT 6] Given the current market conditions and my strategy, I will continue to farm and sell my s
+T23 Cy   (worker) WORK BUY 2@4     filled  0  cash  10 food  1 | [WORK BUY 2 AT 4] I need to work to earn more cash since I have only 2 food and no extra cash to buy more. Pos
+T23 Dot  (worker) WORK BUY 2@5     filled  2  cash  19 food  1 | [WORK BUY 2 AT 5] Given that I have no food and only 24 cash, I should definitely post a buy order at the last
+T23 Eli  (worker) WORK BUY 2@4     filled  0  cash  17 food  0 | [WORK BUY 2 AT 4] I need to work to earn more cash and then buy food. The market price is low, but I should bi
+MARKET T23: price 5, 2 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 24 ---
+T24 Ada  (farmer) FARM SELL 5@5    filled  3  cash 152 food  0 | [FARM SELL 5 AT 5] Last market price was 5, so I should ask 6 for my food. My sell order did not fill last tur
+T24 Bram (farmer) FARM SELL 1@5    filled  1  cash 140 food  3 | [FARM SELL 1 AT 5] Last market price was 5, so I should ask 6 for my food. My sell order from last turn did no
+T24 Cy   (worker) WORK BUY 2@5     filled  2  cash   4 food  2 | [WORK BUY 2 AT 5] Given my current state (1 food, 9 cash), I need to buy some food. The last market price was 
+T24 Dot  (worker) WORK BUY 2@5     filled  0  cash  23 food  0 | [WORK BUY 2 AT 5] I have 1 food and 18 cash. The market price is currently 5, and I bought 2 food at 5 last tu
+T24 Eli  (worker) WORK BUY 2@5     filled  2  cash  11 food  1 | [WORK BUY 2 AT 5] I need to work to earn more cash and buy food. The market price is steady at 4, and since my
+MARKET T24: price 5, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 25 ---
+T25 Ada  (farmer) FARM SELL 2@5    filled  2  cash 161 food  0 | [FARM SELL 2 AT 5] Given the current market conditions and my strategy, I should continue to farm to ensure I 
+T25 Bram (farmer) FARM SELL 1@6    filled  0  cash 139 food  5 | [FARM SELL 1 AT 6] This strategy requires consistent selling to maintain cash flow and ensure I don't run out 
+T25 Cy   (worker) WORK BUY 2@5     filled  1  cash   3 food  2 | [WORK BUY 2 AT 5] I need to work to earn cash to buy food since I only have 2 food and the market prices are r
+T25 Dot  (worker) WORK BUY 2@5     filled  0  cash  27 food  0 | [WORK BUY 2 AT 5] Given the market conditions and my current cash, I should work to earn more cash. Since I ha
+T25 Eli  (worker) WORK BUY 2@5     filled  1  cash  10 food  1 | [WORK BUY 2 AT 5] Given the scarcity of food and the rising prices, it's crucial to secure more food now befor
+MARKET T25: price 5, 2 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 26 ---
+T26 Ada  (farmer) FARM NONE        filled  0  cash 160 food  2 | [FARM SELL NONE AT 4] The market price is currently at 5, and I have no food to sell this turn. I will continu
+T26 Bram (farmer) FARM SELL 3@6    filled  3  cash 156 food  4 | [FARM SELL 3 AT 6] Given the current market conditions and my strategy, I'll continue to farm and sell my exce
+T26 Cy   (worker) WORK BUY 2@4     filled  0  cash   7 food  1 | [WORK BUY 2 AT 4] I should work to earn some cash since I have only 2 and need to buy food. My buy order from 
+T26 Dot  (worker) WORK BUY 2@6     filled  2  cash  19 food  1 | [WORK BUY 2 AT 6] With no food and only 26 cash, I need to buy food this turn. The last market price was 5, so
+T26 Eli  (worker) WORK BUY 2@6     filled  1  cash   8 food  1 | [WORK BUY 2 AT 6] I have 1 food and 9 cash. The market price is steady at 5, and I need to buy 2 more foods to
+MARKET T26: price 6, 3 food traded  (buy orders 3, sell orders 1)
+
+--- Turn 27 ---
+T27 Ada  (farmer) FARM SELL 1@5    filled  1  cash 164 food  3 | [FARM SELL 1 AT 5] Last turn, no one wanted to buy food above 2, so I'll lower my price to match the last mark
+T27 Bram (farmer) FARM SELL 2@7    filled  0  cash 155 food  6 | [FARM SELL 2 AT 7] Given the current situation, I should continue to farm to ensure I have enough food for the
+T27 Cy   (worker) WORK BUY 2@5     filled  0  cash  11 food  0 | [WORK BUY 2 AT 5] I need to work to earn more cash since I have very little food and no cash to buy more. Give
+T27 Dot  (worker) WORK BUY 2@6     filled  1  cash  18 food  1 | [WORK BUY 2 AT 6] Given the scarcity of food and my current cash, I should work to earn more cash. Posting a b
+T27 Eli  (worker) WORK BUY 2@6     filled  0  cash  12 food  0 | [WORK BUY 2 AT 6] I need to work to earn more cash since I only have 1 food and 7 cash. Posting a buy order at
+MARKET T27: price 5, 1 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 28 ---
+T28 Ada  (farmer) FARM SELL 1@4    filled  1  cash 168 food  4 | [FARM SELL 1 AT 4] Given the current market conditions and my strategy, it's clear that the market price is st
+T28 Bram (farmer) FARM SELL 4@5    filled  4  cash 174 food  4 | [FARM SELL 4 AT 5] Last market price was 5, so I'll ask 6 for my food. Since my sell order didn't fill last tu
+T28 Cy   (worker) WORK BUY 2@5     filled  2  cash   5 food  1 | [WORK BUY 2 AT 5] Given that I have no food and my cash is low, I should work to earn more cash and post a buy
+T28 Dot  (worker) WORK BUY 2@6     filled  2  cash  12 food  2 | [WORK BUY 2 AT 6] Given that I have only 1 food and 17 cash, I need to buy at least one more food. The last bi
+T28 Eli  (worker) WORK BUY 2@5     filled  1  cash  11 food  0 | [WORK BUY 2 AT 5] Given that I have no food and only 11 cash, I should work to earn more cash and then post a 
+MARKET T28: price 5, 5 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 29 ---
+T29 Ada  (farmer) FARM SELL 2@5    filled  2  cash 179 food  4 | [FARM SELL 2 AT 5] Last market price was 5, so I should ask 6 for my food. Since my sell order from last turn 
+T29 Bram (farmer) FARM SELL 2@6    filled  2  cash 185 food  4 | [FARM SELL 2 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T29 Cy   (worker) WORK BUY 2@6     filled  0  cash   9 food  0 | [WORK BUY 2 AT 6] Given the scarcity of food and the high cash cost, it's crucial to secure food this turn. Th
+T29 Dot  (worker) WORK BUY 2@6     filled  2  cash   4 food  3 | [WORK BUY 2 AT 6] I have 2 food and 11 cash. The last market price was 5, and since my buy order from last tur
+T29 Eli  (worker) WORK BUY 2@6     filled  2  cash   3 food  1 | [WORK BUY 2 AT 6] Since I have no food, I need to buy some. The last market price was 5, so I'll bid 6 this ti
+MARKET T29: price 6, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 30 ---
+T30 Ada  (farmer) FARM SELL 2@6    filled  2  cash 190 food  4 | [FARM SELL 2 AT 6] Given that the market price is 6, I should sell at 7 to make a profit. However, since my se
+T30 Bram (farmer) FARM SELL 2@6    filled  2  cash 196 food  4 | [FARM SELL 2 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T30 Cy   (worker) WORK BUY 2@6     filled  2  cash   1 food  1 | [WORK BUY 2 AT 6] Given that I have no food and only 8 cash, I need to buy 2 food at the current market price 
+T30 Dot  (worker) WORK BUY 2@7     filled  1  cash   2 food  3 | [WORK BUY 2 AT 7] Given that I have only 3 food and it's late in the game, I should post a buy order to ensure
+T30 Eli  (worker) WORK BUY 2@7     filled  1  cash   1 food  1 | [WORK BUY 2 AT 7] Given that I have only 1 food and 2 cash, I need to prioritize buying food. The last market 
+MARKET T30: price 6, 4 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 31 ---
+T31 Ada  (farmer) FARM SELL 2@7    filled  0  cash 189 food  6 | [FARM SELL 2 AT 7] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T31 Bram (farmer) FARM SELL 2@7    filled  0  cash 195 food  6 | [FARM SELL 2 AT 7] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T31 Cy   (worker) WORK BUY 2@7     filled  0  cash   5 food  0 | [WORK BUY 2 AT 7] Cy currently has 1 food and 0 cash. The market price is 6, and since his order last turn did
+T31 Dot  (worker) WORK BUY 2@6     filled  0  cash   6 food  2 | [WORK BUY 2 AT 6] I need to work to earn more cash because I only have 3 food and it will likely rot by the en
+T31 Eli  (worker) WORK BUY 2@7     filled  0  cash   5 food  0 | [WORK BUY 2 AT 7] Given that I have only 1 food and no cash, and the last market price was 6, I should post a 
+MARKET T31: no trade  (buy orders 1, sell orders 2)
+
+--- Turn 32 ---
+T32 Ada  (farmer) FARM SELL 4@6    filled  0  cash 188 food  6 | [FARM SELL 4 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T32 Bram (farmer) FARM SELL 4@6    filled  2  cash 206 food  6 | [FARM SELL 4 AT 6] Last market price was 6, so I should ask 7 for my food. Since my sell order from last turn 
+T32 Cy   (worker) WORK BUY 2@6     filled  1  cash   3 food  0 | [WORK BUY 2 AT 6] Given the low cash and lack of food, I need to work to earn more cash. The market price is 6
+T32 Dot  (worker) WORK BUY 2@7     filled  1  cash   4 food  2 | [WORK BUY 2 AT 7] Given that I have 2 food and the game is nearing its end, I should work to earn more cash. S
+T32 Eli  (worker) WORK BUY 2@3     filled  0  cash   9 food  0 | [WORK BUY 2 AT 3] Eli has no food and only 4 cash, which is not enough to buy 2 food at the current market pri
+MARKET T32: price 6, 2 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 33 ---
+T33 Ada  (farmer) FARM SELL 4@6    filled  3  cash 205 food  5 | [FARM SELL 4 AT 6] Last market price was 6, so I should ask 7 for my food. My sell order from last turn did no
+T33 Bram (farmer) FARM SELL 1@7    filled  0  cash 205 food  6 | [FARM SELL 1 AT 7] The market seems stable with a steady price of 6, and my food supply is in check. Selling o
+T33 Cy   (worker) WORK BUY 2@6     filled  1  cash   1 food  0 | [WORK BUY 2 AT 6] I need to work to earn cash before the market closes. The price is stable at 6, and I should
+T33 Dot  (worker) WORK BUY 2@7     filled  1  cash   2 food  2 | [WORK BUY 2 AT 7] Given my current cash and food, I need to buy food to ensure I don't go without eating. The 
+T33 Eli  (worker) WORK BUY 2@7     filled  1  cash   7 food  0 | [WORK BUY 2 AT 7] I need to work to earn cash to buy food. The market price is still at 6, and I didn't get an
+MARKET T33: price 6, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 34 ---
+T34 Ada  (farmer) FARM SELL 3@5    filled  2  cash 214 food  5 | [FARM SELL 3 AT 5] Given the current market conditions and my strategy, I should continue to farm and sell exc
+T34 Bram (farmer) FARM SELL 4@7    filled  0  cash 204 food  6 | [FARM SELL 4 AT 7] Given the current market dynamics and my strategy, I need to ensure I sell my excess food t
+T34 Cy   (worker) WORK BUY 2@6     filled  0  cash   5 food  0 | [WORK BUY 2 AT 6] Cy has no food and no cash, so he must work to earn some cash. He needs to post a buy order 
+T34 Dot  (worker) WORK BUY 2@6     filled  1  cash   1 food  2 | [WORK BUY 2 AT 6] Given that I have only 2 food and it's a critical point to ensure I have food for the next t
+T34 Eli  (worker) WORK BUY 2@7     filled  1  cash   6 food  0 | [WORK BUY 2 AT 7] Given that I have no food and only 6 cash, I should work to earn more cash. Since the last m
+MARKET T34: price 5, 2 food traded  (buy orders 2, sell orders 2)
+
+--- Turn 35 ---
+T35 Ada  (farmer) FARM SELL 3@6    filled  0  cash 213 food  6 | [FARM SELL 3 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T35 Bram (farmer) FARM SELL 4@5    filled  2  cash 213 food  6 | [FARM SELL 4 AT 5] Given the current market conditions and my strategy, I should continue to farm and sell sur
+T35 Cy   (worker) WORK BUY 2@6     filled  1  cash   4 food  0 | [WORK BUY 2 AT 6] I need to work to earn cash to buy food. The price is now 5, so I'll bid 6 to have a chance 
+T35 Dot  (worker) WORK BUY 2@6     filled  0  cash   5 food  1 | [WORK BUY 2 AT 6] Given that I have only 2 food and I need to ensure I get at least one more to avoid running 
+T35 Eli  (worker) WORK BUY 2@6     filled  1  cash   5 food  0 | [WORK BUY 2 AT 6] Given that I have no food and only 5 cash, I need to buy food immediately. The last market p
+MARKET T35: price 5, 2 food traded  (buy orders 2, sell orders 2)
+
+--- Turn 36 ---
+T36 Ada  (farmer) FARM SELL 4@5    filled  3  cash 227 food  5 | [FARM SELL 4 AT 5] Last market price was 5, so I should ask 6 for my food. Since my sell order did not fill la
+T36 Bram (farmer) FARM SELL 4@6    filled  0  cash 212 food  6 | [FARM SELL 4 AT 6] Given the current market conditions and the strategy sheet, I should continue to farm and s
+T36 Cy   (worker) WORK BUY 2@6     filled  1  cash   3 food  0 | [WORK BUY 2 AT 6] Last turn, the market price was 5, and my buy order for 1 food at 5 did not fill, so I shoul
+T36 Dot  (worker) WORK BUY 2@5     filled  1  cash   4 food  1 | [WORK BUY 2 AT 5] Given that I only have 1 food and 4 cash, I need to post a buy order for 2 food at the curre
+T36 Eli  (worker) WORK BUY 2@5     filled  1  cash   4 food  0 | [WORK BUY 2 AT 5] Eli has very little cash and no food, so he needs to buy food immediately. He should post a 
+MARKET T36: price 5, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 37 ---
+T37 Ada  (farmer) FARM SELL 3@6    filled  1  cash 232 food  6 | [FARM SELL 3 AT 6] The market seems to be stable with a price of 5, and I have a small surplus of food. Sellin
+T37 Bram (farmer) FARM SELL 4@6    filled  0  cash 211 food  6 | [FARM SELL 4 AT 6] Given the current market conditions and my strategy, I should continue farming and selling 
+T37 Cy   (worker) WORK BUY 2@4     filled  0  cash   7 food  0 | [WORK BUY 2 AT 4] Given that I have no food and only 2 cash, I need to buy 2 food at the current market price 
+T37 Dot  (worker) WORK BUY 2@6     filled  1  cash   2 food  1 | [WORK BUY 2 AT 6] Given my current cash and food, I should work to earn more cash. Since the last market price
+T37 Eli  (worker) WORK BUY 2@5     filled  0  cash   8 food  0 | [WORK BUY 2 AT 5] Given my current state, I need to work to earn more cash to buy food. Since the last price w
+MARKET T37: price 6, 1 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 38 ---
+T38 Ada  (farmer) FARM SELL 4@7    filled  0  cash 231 food  6 | [FARM SELL 4 AT 7] Given the current market conditions and my strategy, I should continue to farm and sell sur
+T38 Bram (farmer) FARM SELL 4@6    filled  3  cash 228 food  5 | [FARM SELL 4 AT 6] Given the current market conditions and my strategy, I should continue to farm and sell my 
+T38 Cy   (worker) WORK BUY 2@5     filled  0  cash  11 food  0 | [WORK BUY 2 AT 5] Given that I have no food and my cash is very low, I need to act quickly to acquire food. Th
+T38 Dot  (worker) WORK BUY 2@6     filled  1  cash   0 food  1 | [WORK BUY 2 AT 6] With only 1 food and 1 cash, I need to buy food soon. The market price is stable at 6, so I'
+T38 Eli  (worker) WORK BUY 2@6     filled  2  cash   0 food  1 | [WORK BUY 2 AT 6] Given that I have no food and only 7 cash, I need to buy food. The last market price was 5, 
+MARKET T38: price 6, 3 food traded  (buy orders 3, sell orders 2)
+
+--- Turn 39 ---
+T39 Ada  (farmer) FARM SELL 4@6    filled  2  cash 242 food  6 | [FARM SELL 4 AT 6] Given the current market conditions and my strategy, I should continue to farm and ensure I
+T39 Bram (farmer) FARM SELL 3@7    filled  0  cash 227 food  6 | [FARM SELL 3 AT 7] Considering the current market price and my strategy, I should post a sell order for my exc
+T39 Cy   (worker) WORK BUY 2@6     filled  2  cash   3 food  1 | [WORK BUY 2 AT 6] I need to work to earn cash to buy food. The market price is currently 6, and since my last 
+T39 Dot  (worker) WORK BUY 2@7     filled  0  cash   4 food  0 | [WORK BUY 2 AT 7] I need to work to earn some cash, as I currently have none and can't afford food. Since my l
+T39 Eli  (worker) WORK BUY 2@7     filled  0  cash   4 food  0 | [WORK BUY 2 AT 7] Eli has no cash and only 1 food, which means he must buy food this turn to avoid going witho
+MARKET T39: price 6, 2 food traded  (buy orders 1, sell orders 2)
+
+--- Turn 40 ---
+T40 Ada  (farmer) FARM SELL 4@7    filled  1  cash 248 food  6 | [FARM SELL 4 AT 7] Last market price was 6, so I should ask 7 for my food. Since my sell order from last turn 
+T40 Bram (farmer) FARM SELL 4@7    filled  0  cash 226 food  6 | [FARM SELL 4 AT 7] Given the current market conditions and my strategy, I should continue farming and posting 
+T40 Cy   (worker) WORK BUY 2@6     filled  0  cash   7 food  0 | [WORK BUY 2 AT 6] I need to work to earn more cash, as I currently have very little and no food to spare for t
+T40 Dot  (worker) WORK BUY 2@7     filled  1  cash   1 food  0 | [WORK BUY 2 AT 7] Given that I have no food and only 3 cash, I need to buy some food immediately to avoid goin
+T40 Eli  (worker) WORK BUY 2@6     filled  0  cash   8 food  0 | [WORK BUY 2 AT 6] Eli, with only 3 cash and no food, needs to prioritize buying food. Given the market prices 
+MARKET T40: price 7, 1 food traded  (buy orders 3, sell orders 2)
+
+=== Summary ===
+Ada  (farmer) alive     cash 248 food  6  FARM:40 REST:0  bought:0 sold:52 spoiled:10 no_order:1 parse_fail:0
+Bram (farmer) alive     cash 226 food  6  FARM:40 REST:0  bought:0 sold:50 spoiled:13 no_order:1 parse_fail:0
+Eli  (worker) alive     cash   8 food  0  WORK:39 REST:1  bought:33 sold:0 spoiled:0 no_order:4 parse_fail:0
+Cy   (worker) alive     cash   7 food  0  WORK:40 REST:0  bought:34 sold:0 spoiled:0 no_order:1 parse_fail:0
+Dot  (worker) alive     cash   1 food  0  WORK:39 REST:1  bought:35 sold:0 spoiled:0 no_order:5 parse_fail:0
+
+Prices by turn (- = no trade): - 4 4 4 4 5 5 6 5 5 5 5 4 4 4 5 5 - - 5 4 5 5 5 5 6 5 5 6 6 - 6 6 5 5 5 6 6 6 7
+Avg price  before shock: 4.6  during (T15-T22): 4.7  after: 5.6
+Turns with a trade: 36 of 40. Food traded: 102.
+Model: qwen2.5:7b. Elapsed: 472s. Logs: runs/drought_3_log.csv, runs/drought_3_prices.csv

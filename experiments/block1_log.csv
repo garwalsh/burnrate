@@ -1,0 +1,73 @@
+turn,agent,persona,action,cash,food,alive,reason
+1,Ada,neutral,WORK,24,2,True,
+1,Bram,neutral,WORK,24,2,True,I need cash to survive.
+1,Cy,neutral,WORK,24,2,True,Reason: Earn cash to stay alive.
+1,Dot,neutral,WORK,24,2,True,Earning cash is a good start.
+1,Eli,neutral,WORK,24,2,True,
+2,Ada,neutral,WORK,28,1,True,
+2,Bram,neutral,WORK,28,1,True,I need to earn some cash.
+2,Cy,neutral,WORK,28,1,True,Earning cash to sustain myself.
+2,Dot,neutral,WORK,28,1,True,Earning cash to stay ahead.
+2,Eli,neutral,WORK,28,1,True,Earn more cash to survive longer.
+3,Ada,neutral,WORK,32,0,True,Earn 5 cash
+3,Bram,neutral,WORK,32,0,True,Earns cash to survive.
+3,Cy,neutral,BUY,23,2,True,Reason: need food
+3,Dot,neutral,WORK,32,0,True,I earn cash to keep it above zero.
+3,Eli,neutral,BUY,23,2,True,
+4,Ada,neutral,WORK,36,0,True,Reason: Need cash.
+4,Bram,neutral,WORK,36,0,True,"I have no food to eat, but I have enough cash to earn some."
+4,Cy,neutral,WORK,27,1,True,Earn 5 cash to catch up.
+4,Dot,neutral,WORK,36,0,True,(I need to earn more cash to survive)
+4,Eli,neutral,WORK,27,1,True,
+5,Ada,neutral,WORK,40,0,True,Earn cash
+5,Bram,neutral,WORK,40,0,True,I need to earn cash to survive.
+5,Cy,neutral,BUY,22,2,True,Reason: Need food and cash replenishment.
+5,Dot,neutral,WORK,40,0,True,I need cash to survive.
+5,Eli,neutral,BUY,22,2,True,I need food.
+6,Ada,neutral,WORK,44,0,False,Reason: Earn cash before food runs out.
+6,Bram,neutral,BUY,35,1,True,Reason: Need food to survive.
+6,Cy,neutral,WORK,26,1,True,
+6,Dot,neutral,WORK,44,0,False,I need cash to survive.
+6,Eli,neutral,WORK,26,1,True,Earns cash to stay in the game.
+7,Bram,neutral,WORK,39,0,True,Earning cash before food runs out.
+7,Cy,neutral,BUY,21,2,True,
+7,Eli,neutral,BUY,21,2,True,I need food.
+8,Bram,neutral,BUY,34,1,True,"Reason: Run out of food, need to buy more."
+8,Cy,neutral,WORK,25,1,True,I earn cash to increase my chances of survival.
+8,Eli,neutral,WORK,25,1,True,Earn money
+9,Bram,neutral,BUY,29,2,True,Reason: Need food.
+9,Cy,neutral,WORK,29,0,True,
+9,Eli,neutral,WORK,29,0,True,I need to keep earning cash to survive.
+10,Bram,neutral,WORK,33,1,True,Earn some cash
+10,Cy,neutral,WORK,33,0,True,I need to earn cash.
+10,Eli,neutral,WORK,33,0,True,Earning cash to survive.
+11,Bram,neutral,BUY,28,2,True,Reason: Need food to survive.
+11,Cy,neutral,BUY,28,1,True,Reason: Need food to survive.
+11,Eli,neutral,WORK,37,0,True,I need food.
+12,Bram,neutral,WORK,32,1,True,I need food.
+12,Cy,neutral,WORK,32,0,True,I need the cash.
+12,Eli,neutral,WORK,41,0,False,(I need to earn cash to survive.)
+13,Bram,neutral,BUY,27,2,True,Reason: Don't waste my chance to earn.
+13,Cy,neutral,BUY,27,1,True,I need food.
+14,Bram,neutral,BUY,22,3,True,Because I want to replenish my food.
+14,Cy,neutral,WORK,31,0,True,Eating food to avoid starvation.
+15,Bram,neutral,WORK,26,2,True,Earn cash and progress.
+15,Cy,neutral,BUY,26,1,True,Reason: Need food.
+16,Bram,neutral,WORK,30,1,True,"Eating food, need more cash."
+16,Cy,neutral,BUY,21,2,True,Because I need to eat food to survive.
+17,Bram,neutral,BUY,25,2,True,Reason: Need food to survive
+17,Cy,neutral,WORK,25,1,True,Earn cash to stay alive.
+18,Bram,neutral,WORK,29,1,True,
+18,Cy,neutral,WORK,29,0,True,
+19,Bram,neutral,WORK,33,0,True,Earns cash to stay alive.
+19,Cy,neutral,WORK,33,0,True,Earn cash
+20,Bram,neutral,WORK,37,0,True,Earning cash to survive.
+20,Cy,neutral,BUY,28,1,True,
+21,Bram,neutral,WORK,41,0,True,Want to earn cash before dying.
+21,Cy,neutral,WORK,32,0,True,Earn cash
+22,Bram,neutral,WORK,45,0,False,"No cash, must earn"
+22,Cy,neutral,BUY,27,1,True,
+23,Cy,neutral,WORK,31,0,True,"Earn 5 cash, try to survive."
+24,Cy,neutral,WORK,35,0,True,
+25,Cy,neutral,WORK,39,0,True,Earn some cash.
+26,Cy,neutral,WORK,43,0,False,Earn some cash.
