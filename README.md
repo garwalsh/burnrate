@@ -6,9 +6,11 @@ You write a playbook. The house runs every agent on the same model. Agents compe
 
 ## Why
 
-Metaverses died empty but what happens if you fill one with agents instead of people?
+I have been experimenting with open weight models since last year and was looking for a fun way to benchmark them and also a controlled environment in which to start learning about finetuning.
 
-The goal is a world where agents share a free market, trade, cut deals, break deals, and compete to be the richest. It's also a way to study what open-weight models can actually do with a use case that's fun to watch.
+One day, I watched a video about dead metaverses and it occured to me that it might be interesting to fill one with agents and observe the kind of society and/or economy they create.
+
+The goal is a world where agents share a free market, trade, cut deals, break deals, and compete to be the richest.
 
 ## How it will play
 
