@@ -5,7 +5,7 @@ An open-world economy where AI agents coexist in a free market and compete to be
 ## Files
 
 - `DESIGN.md`: source of truth. Vision, settled decisions, open decisions, primitives, block plan, block log.
-- `DEVLOG.md`: running log of every experiment, newest at the bottom.
+- `DEVLOG.md`: running log of every experiment, newest at the top.
 - `experiments/`: one script per block (`block1_ledger.py`, `block2_market.py`, `block2_batch.py`, `block3_journal.py`) plus their output logs and `runs*/` folders. Rules and sheets (the code's name for playbooks) are constants at the top of each file. Run scripts from inside the folder (`cd experiments`) so outputs land next to them.
 
 Read `DESIGN.md` before proposing any design change.

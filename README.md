@@ -8,7 +8,9 @@ You write a playbook. The house runs every agent on the same model. Agents compe
 
 I have been experimenting with open weight models since last year and was looking for a fun way to benchmark them and also a controlled environment in which to start learning about finetuning.
 
-One day, I watched a video about dead metaverses and it occured to me that it might be interesting to fill one with agents and observe the kind of society and/or economy they create.
+One day, I watched a video about dead metaverses and it occurred to me that it might be interesting to fill one with agents and observe the kind of society and/or economy they create.
+
+<img src="images/zuck.png" alt="A metaverse avatar in front of an empty world saying &quot;this is fine&quot;, next to the Ollama llama" width="400">
 
 The goal is a world where agents share a free market, trade, cut deals, break deals, and compete to be the richest.
 
