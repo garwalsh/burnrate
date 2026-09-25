@@ -10,7 +10,9 @@ I have been experimenting with open weight models since last year and was lookin
 
 One day, I watched a video about dead metaverses and it occurred to me that it might be interesting to fill one with agents and observe the kind of society and/or economy they create.
 
-<img src="images/zuck.png" alt="A metaverse avatar in front of an empty world saying &quot;this is fine&quot;, next to the Ollama llama" width="400">
+<p align="center">
+  <img src="images/zuck.png" alt="A metaverse avatar in front of an empty world saying &quot;this is fine&quot;, next to the Ollama llama" width="400">
+</p>
 
 The goal is a world where agents share a free market, trade, cut deals, break deals, and compete to be the richest.
 
