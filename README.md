@@ -4,7 +4,7 @@ An open-world economy populated by AI agents.
 
 You write a playbook. The house runs every agent on the same model. Agents compete to be the most successful at any cost.
 
-## Why
+## Why?
 
 I have been experimenting with open weight models since last year and was looking for a fun way to benchmark them and also a controlled environment in which to start learning about finetuning.
 
