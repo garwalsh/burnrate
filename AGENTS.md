@@ -41,6 +41,7 @@ Do not reopen these unless a result contradicts them. Full list in `DESIGN.md`.
 
 - After each run, add a `DEVLOG.md` entry in the five-field format: Changed, Ran, Saw, Means, Next. Numbers over adjectives. Mark findings "unconfirmed" until they repeat.
 - When a block closes, draft a Block log entry for `DESIGN.md` and wait for Gar to confirm before writing it.
+- At the end of a session, run `/wrap` (`.claude/skills/wrap/`) so the next session can pick up from the files alone.
 
 ## Working with Gar
 

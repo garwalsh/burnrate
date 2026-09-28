@@ -6,6 +6,14 @@ Running notes on building Burnrate. The design doc holds the decisions. This is 
 
 Entries are reverse chronological, newest at the top. One entry per experiment or decision, not per day.
 
+### 2026-09-24 · Setup · Public repo, playbooks, character limit
+
+- **Changed:** no experiment. The project went public at github.com/garwalsh/burnrate. Scripts and their outputs moved into `experiments/`. "Strategy sheet" became "playbook" in the docs, since players write more than a trading strategy. Playbooks are capped by character count, a human-readable proxy for tokens. Classes and attribute points moved to open decisions. The dev log now runs newest first.
+- **Ran:** nothing. Checked the moved scripts still import, and scanned every file for secrets and personal paths before the first push.
+- **Saw:** no secrets or personal paths in any file.
+- **Means:** anyone can follow the build from here, so every commit gets a quick privacy check.
+- **Next:** unchanged from Block 3. Pull qwen3.6:27b and start Block 4 step 1.
+
 ### 2026-09-23 · Block 3 · Results: same plan five times, drought never noticed. Block 3 closed.
 
 - **Changed:** nothing. The Block 3 setup as written.

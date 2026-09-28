@@ -83,11 +83,13 @@ Each block ends with something to look at and a question it answers.
 | 6 | The player loop: run report, replay viewer, ticks published on a clock, playbook submission, directive budget. Closed alpha with 5 friends. | Can a player spot a planted pattern from the report alone, and beat the house playbooks? What do they exploit? |
 | 7 | Web app and first public season: accounts, submission, tick scheduler, leaderboard, replays. | Can strangers play without Gar in the loop, and does anyone care? |
 
-## Picking this up (as of Sep 23, 2026)
+## Picking this up (as of Sep 28, 2026)
 
 **Where it stands.** Blocks 1 to 3 are done, all three with negative or narrow results. The through-line: the house model executes a playbook faithfully and cannot author strategy or learn from its own history. So the player owns the thinking loop (watch a run, spot what the world is doing, rewrite the playbook) and the agent owns execution. The sim as built is one good, one anonymous auction, identical information for everyone, which leaves pricing as the only strategy. Block 4 is about giving the world enough surface for strategies to differ.
 
-**Code**, in Gar's `burnrate` folder, Python 3.9, Ollama running qwen2.5:7b locally:
+**Repo.** Public at github.com/garwalsh/burnrate since Sep 24, with a README for people following along. `NOTES.md` and `content/` (post drafts) stay local and gitignored. Players' strategy text is now called a playbook everywhere in the docs, capped by character count; the code and the Block log still say "sheet". Run `/wrap` at the end of each session to hand off to the next one.
+
+**Code**, in `experiments/` (run scripts from inside it), Python 3.9, Ollama running qwen2.5:7b locally:
 
 - `block2_market.py` is the world. 5 agents (2 farmers, 3 workers), think cost, eat-or-starve, spoilage above 6 food, a call auction that clears once a turn, a hidden drought at T15 to T22, and per-agent strategy sheets (the code's name for playbooks). Rules and sheets are constants at the top. Writes a per-turn CSV and a price CSV.
 - `block2_batch.py` runs it N times per arm (drought vs control) and prints one comparison table.
@@ -95,11 +97,13 @@ Each block ends with something to look at and a question it answers.
 
 **How we work.** One variable per run. n = 3 per setting minimum, because single-run comparisons produced two false findings in Block 2. Every run gets logged in the Burnrate dev log with what changed, what ran, what was seen, what it means, and what's next. Before believing an agent-behaviour finding, check the harness first: three early "findings" were our own bugs (a price in the prompt example anchored all trades, an answer-first reply format forced the agent's first word, and agents saw trades but never the order book).
 
+**Test bench spec (draft, Sep 28).** `specs/test-bench-v0.1.md` (local only, gitignored for now): a small local UI to build, run and review experiments, one self-contained JSON record per run, and a read-only viewer on GitHub Pages. Groundwork for LLM-as-judge evals later. Run records go in `records/`, apart from the scripts. Not yet placed in the block plan; its open questions are listed at the bottom of the spec.
+
 **Open threads not yet in a block:** what a playbook can express before fidelity breaks (does qwen honour a conditional?), the scoring metric, and the tick rhythm plus directive budget in Open decisions.
 
 **Model ladder (agreed Sep 23).** Testing the world on a small model confounds two questions: is the world thin, or is the model too weak to see what's in it? So from Block 4 on, the world is tested on the strongest model Gar's Mac can run (M1 Max, 64GB) first. If it finds several distinct ways to win, the world is rich enough. Then its winning strategies get written up as playbooks and handed to smaller and smaller models. The smallest one that still follows them faithfully becomes the house model, since the production model needs to be obedient, not clever (the player does the thinking). Ladder: qwen3.6:27b (top), a qwen3 14B (middle), qwen2.5:7b (current house model). All local and free; pay for an API run set only when a local result is ambiguous. Expect about an hour per game on the top rung, so test sets run overnight.
 
-**Next step.** Gar pulls `qwen3.6:27b` (about 17GB) and checks it replies. Then: switch the model in `block2_market.py`, turn off Qwen3's built-in thinking mode so it doesn't slow the run or break the reply parser, and start Block 4 step 1. Block 4 is built in steps, one run set each: (1) named offers replace the auction, one good; (2) private messages; (3) extra goods and an input chain; (4) the 3-playbook test that closes the block. Possibly the first job done in Claude Code.
+**Next step.** Gar wants to play with the test bench, probably starting with the UI (list and detail views). Loose on purpose: explore, then firm up the spec. Block 4 comes after. For Block 4: pull `qwen3.6:27b` (about 17GB), check it replies, switch the model in `block2_market.py` with Qwen3's thinking mode off, then build in steps, one run set each: (1) named offers replace the auction, one good; (2) private messages; (3) extra goods and an input chain; (4) the 3-playbook test that closes the block.
 
 ## Block log
 
